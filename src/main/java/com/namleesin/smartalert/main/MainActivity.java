@@ -8,7 +8,6 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.LoaderManager.LoaderCallbacks;
 import android.support.v4.content.Loader;
 import android.support.v4.widget.DrawerLayout.DrawerListener;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -69,6 +68,14 @@ public class MainActivity extends FragmentActivity implements DrawerListener,
 		mAdapter = new NotiDataListAdapter(this);
 		ListView list = (ListView)findViewById(R.id.noti_list);
 		list.setAdapter(mAdapter);
+
+		View more_btn = findViewById(R.id.more_btn);
+		more_btn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+
+			}
+		});
 	}
 
 	public void onDestroy()
@@ -86,7 +93,6 @@ public class MainActivity extends FragmentActivity implements DrawerListener,
 	public void onLoadFinished(Loader<ArrayList<NotiInfoData>> loader,
 			ArrayList<NotiInfoData> data) 
 	{
-		Log.d("NJ LEE", "onLoadFinished");
 		if(data != null) {
 			mAdapter.setData(data);
 			mAdapter.notifyDataSetChanged();

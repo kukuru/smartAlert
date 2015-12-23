@@ -22,38 +22,29 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.namleesin.smartalert.main.SplashScreenActivity" 
-            >            
-        </activity>
+            android:name="com.namleesin.smartalert.main.SplashScreenActivity"
+            android:screenOrientation="portrait"/>
         <activity
-            android:name="com.namleesin.smartalert.guidemgr.GuideDes01Activity" 
-            >            
-        </activity>
+            android:name="com.namleesin.smartalert.guidemgr.GuideDes01Activity"
+            android:screenOrientation="portrait"/>
         <activity
-            android:name="com.namleesin.smartalert.guidemgr.GuideDes02Activity" 
-            >            
-        </activity>
+            android:name="com.namleesin.smartalert.guidemgr.GuideDes02Activity"
+            android:screenOrientation="portrait"/>
         <activity
-            android:name="com.namleesin.smartalert.guidemgr.GuideDes03Activity" 
-            >            
-        </activity>
+            android:name="com.namleesin.smartalert.guidemgr.GuideDes03Activity"
+            android:screenOrientation="portrait"/>
         <activity
-            android:name="com.namleesin.smartalert.settingmgr.AlertSettingActivity" 
-            >       
-        </activity>
+            android:name="com.namleesin.smartalert.settingmgr.AlertSettingActivity"
+            android:screenOrientation="portrait"/>
         <activity
-            android:name="com.namleesin.smartalert.settingmgr.SpamNotiSettingActivity" 
-            >            
-        </activity>
+            android:name="com.namleesin.smartalert.settingmgr.SpamNotiSettingActivity"
+            android:screenOrientation="portrait"/>
         <activity
-            android:name="com.namleesin.smartalert.settingmgr.LikeNotiSettingActivity" 
-            >            
-        </activity>
+            android:name="com.namleesin.smartalert.settingmgr.LikeNotiSettingActivity"
+            android:screenOrientation="portrait"/>
         <activity
-            android:name="com.namleesin.smartalert.graph.SAGraphActivity" 
-            >
-            
-        </activity>
+            android:name="com.namleesin.smartalert.graph.SAGraphActivity"
+            android:screenOrientation="portrait"/>
 
         <service android:name="com.namleesin.smartalert.notimgr.NotificationListener"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
